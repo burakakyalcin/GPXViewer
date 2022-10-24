@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BB831FEFDB4020BCFA792DB /* Pods_GPXViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD99511B690C751795F9830 /* Pods_GPXViewer.framework */; };
+		98148D4329030B7B0058EBF1 /* TrackMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98148D4229030B7B0058EBF1 /* TrackMapper.swift */; };
+		98784F74290472EA006F4BE4 /* TracksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98784F73290472EA006F4BE4 /* TracksViewModel.swift */; };
+		98784F76290472F0006F4BE4 /* TracksViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98784F75290472F0006F4BE4 /* TracksViewModelBuilder.swift */; };
+		98784F792904730C006F4BE4 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98784F782904730C006F4BE4 /* TrackTableViewCell.swift */; };
+		98784F8129047567006F4BE4 /* UIStackView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98784F8029047567006F4BE4 /* UIStackView+Utils.swift */; };
+		98784F832904757D006F4BE4 /* UITableView+TypeSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98784F822904757D006F4BE4 /* UITableView+TypeSafe.swift */; };
+		98784F8929047A03006F4BE4 /* TrackTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98784F8829047A03006F4BE4 /* TrackTableViewCellViewModel.swift */; };
+		98784F8D29048EC1006F4BE4 /* MapKit+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98784F8C29048EC1006F4BE4 /* MapKit+Utils.swift */; };
+		98784F8F29049023006F4BE4 /* MapSnapshotGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98784F8E29049023006F4BE4 /* MapSnapshotGenerator.swift */; };
+		98784F932904BDFE006F4BE4 /* TrackInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98784F922904BDFE006F4BE4 /* TrackInfoViewController.swift */; };
+		98784F9629055C4C006F4BE4 /* TrackInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98784F9529055C4C006F4BE4 /* TrackInfoTableViewCell.swift */; };
+		98784F9829055C71006F4BE4 /* TrackInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98784F9729055C71006F4BE4 /* TrackInfoInteractor.swift */; };
+		98B5DF0B290564B000C6FBCB /* TrackInfoViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5DF0A290564B000C6FBCB /* TrackInfoViewModelBuilder.swift */; };
+		98B5DF0E290564D100C6FBCB /* TrackInfoTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5DF0D290564D100C6FBCB /* TrackInfoTableViewCellViewModel.swift */; };
+		98B5DF10290564EF00C6FBCB /* TrackInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5DF0F290564EF00C6FBCB /* TrackInfoViewModel.swift */; };
+		98FE9A9B290045350014CBAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9A9A290045350014CBAD /* AppDelegate.swift */; };
+		98FE9A9D290045350014CBAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9A9C290045350014CBAD /* SceneDelegate.swift */; };
+		98FE9A9F290045350014CBAD /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9A9E290045350014CBAD /* TracksViewController.swift */; };
+		98FE9AA4290045360014CBAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FE9AA3290045360014CBAD /* Assets.xcassets */; };
+		98FE9AA7290045360014CBAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FE9AA5290045360014CBAD /* LaunchScreen.storyboard */; };
+		98FE9AAF2900454B0014CBAD /* TrackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9AAE2900454B0014CBAD /* TrackParser.swift */; };
+		98FE9AE22901ED550014CBAD /* TracksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9AE12901ED550014CBAD /* TracksInteractor.swift */; };
+		98FE9AE8290205B40014CBAD /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 98FE9AE7290205B40014CBAD /* Resources.bundle */; };
+		98FE9AEA2902E7DA0014CBAD /* BundleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9AE92902E7DA0014CBAD /* BundleManager.swift */; };
+		98FE9AEC2902E87B0014CBAD /* TracksFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9AEB2902E87B0014CBAD /* TracksFactory.swift */; };
+		98FE9AEE2902E9DF0014CBAD /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9AED2902E9DF0014CBAD /* Track.swift */; };
+		98FE9AF22902F3190014CBAD /* TrackDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9AF12902F3190014CBAD /* TrackDetailViewController.swift */; };
+		98FE9AF42902F3260014CBAD /* TrackDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9AF32902F3260014CBAD /* TrackDetailInteractor.swift */; };
+		98FE9AF62902F3420014CBAD /* TracksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9AF52902F3420014CBAD /* TracksCoordinator.swift */; };
+		98FE9AFD2902F4730014CBAD /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9AFC2902F4730014CBAD /* AppContext.swift */; };
+		98FE9AFF2902F4990014CBAD /* AppInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9AFE2902F4990014CBAD /* AppInitializer.swift */; };
+		98FE9B012902F4A70014CBAD /* AllServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9B002902F4A70014CBAD /* AllServices.swift */; };
+		98FE9B052902F5330014CBAD /* TracksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FE9B042902F5330014CBAD /* TracksRepository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C30500B2B984655BB36C382 /* Pods-GPXViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPXViewer.release.xcconfig"; path = "Target Support Files/Pods-GPXViewer/Pods-GPXViewer.release.xcconfig"; sourceTree = "<group>"; };
+		89A24724C7760E727011EF3E /* Pods-GPXViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPXViewer.debug.xcconfig"; path = "Target Support Files/Pods-GPXViewer/Pods-GPXViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		98148D4229030B7B0058EBF1 /* TrackMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackMapper.swift; sourceTree = "<group>"; };
+		98784F73290472EA006F4BE4 /* TracksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewModel.swift; sourceTree = "<group>"; };
+		98784F75290472F0006F4BE4 /* TracksViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewModelBuilder.swift; sourceTree = "<group>"; };
+		98784F782904730C006F4BE4 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		98784F8029047567006F4BE4 /* UIStackView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Utils.swift"; sourceTree = "<group>"; };
+		98784F822904757D006F4BE4 /* UITableView+TypeSafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+TypeSafe.swift"; sourceTree = "<group>"; };
+		98784F8829047A03006F4BE4 /* TrackTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		98784F8C29048EC1006F4BE4 /* MapKit+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapKit+Utils.swift"; sourceTree = "<group>"; };
+		98784F8E29049023006F4BE4 /* MapSnapshotGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSnapshotGenerator.swift; sourceTree = "<group>"; };
+		98784F922904BDFE006F4BE4 /* TrackInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfoViewController.swift; sourceTree = "<group>"; };
+		98784F9529055C4C006F4BE4 /* TrackInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfoTableViewCell.swift; sourceTree = "<group>"; };
+		98784F9729055C71006F4BE4 /* TrackInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfoInteractor.swift; sourceTree = "<group>"; };
+		98B5DF0A290564B000C6FBCB /* TrackInfoViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfoViewModelBuilder.swift; sourceTree = "<group>"; };
+		98B5DF0D290564D100C6FBCB /* TrackInfoTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfoTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		98B5DF0F290564EF00C6FBCB /* TrackInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfoViewModel.swift; sourceTree = "<group>"; };
+		98FE9A97290045350014CBAD /* GPXViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPXViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FE9A9A290045350014CBAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98FE9A9C290045350014CBAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		98FE9A9E290045350014CBAD /* TracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
+		98FE9AA3290045360014CBAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98FE9AA6290045360014CBAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98FE9AA8290045360014CBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98FE9AAE2900454B0014CBAD /* TrackParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackParser.swift; sourceTree = "<group>"; };
+		98FE9AE12901ED550014CBAD /* TracksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksInteractor.swift; sourceTree = "<group>"; };
+		98FE9AE7290205B40014CBAD /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Resources.bundle; path = GPXViewer/Resources.bundle; sourceTree = "<group>"; };
+		98FE9AE92902E7DA0014CBAD /* BundleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleManager.swift; sourceTree = "<group>"; };
+		98FE9AEB2902E87B0014CBAD /* TracksFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksFactory.swift; sourceTree = "<group>"; };
+		98FE9AED2902E9DF0014CBAD /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		98FE9AF12902F3190014CBAD /* TrackDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailViewController.swift; sourceTree = "<group>"; };
+		98FE9AF32902F3260014CBAD /* TrackDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailInteractor.swift; sourceTree = "<group>"; };
+		98FE9AF52902F3420014CBAD /* TracksCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksCoordinator.swift; sourceTree = "<group>"; };
+		98FE9AFC2902F4730014CBAD /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		98FE9AFE2902F4990014CBAD /* AppInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializer.swift; sourceTree = "<group>"; };
+		98FE9B002902F4A70014CBAD /* AllServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllServices.swift; sourceTree = "<group>"; };
+		98FE9B042902F5330014CBAD /* TracksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksRepository.swift; sourceTree = "<group>"; };
+		CAD99511B690C751795F9830 /* Pods_GPXViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPXViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98FE9A94290045350014CBAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB831FEFDB4020BCFA792DB /* Pods_GPXViewer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87B0F90537AF716177C46E04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAD99511B690C751795F9830 /* Pods_GPXViewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98148D4429030E600058EBF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98FE9AED2902E9DF0014CBAD /* Track.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		98148D4529030E670058EBF1 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				98FE9AEB2902E87B0014CBAD /* TracksFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		98148D4729030E7B0058EBF1 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				98FE9AAE2900454B0014CBAD /* TrackParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		98148D4829030E840058EBF1 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				98148D4229030B7B0058EBF1 /* TrackMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		98148D4929030E8A0058EBF1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				98FE9AE92902E7DA0014CBAD /* BundleManager.swift */,
+				98784F8E29049023006F4BE4 /* MapSnapshotGenerator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		98148D4A29030EA40058EBF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98FE9AA3290045360014CBAD /* Assets.xcassets */,
+				98FE9AA5290045360014CBAD /* LaunchScreen.storyboard */,
+				98FE9AA8290045360014CBAD /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98784F72290472DC006F4BE4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				98784F73290472EA006F4BE4 /* TracksViewModel.swift */,
+				98784F75290472F0006F4BE4 /* TracksViewModelBuilder.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		98784F77290472FE006F4BE4 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				98784F87290479F4006F4BE4 /* ViewModel */,
+				98784F782904730C006F4BE4 /* TrackTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		98784F7E29047556006F4BE4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				98784F7F2904755C006F4BE4 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		98784F7F2904755C006F4BE4 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				98784F8029047567006F4BE4 /* UIStackView+Utils.swift */,
+				98784F822904757D006F4BE4 /* UITableView+TypeSafe.swift */,
+				98784F8C29048EC1006F4BE4 /* MapKit+Utils.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		98784F87290479F4006F4BE4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				98784F8829047A03006F4BE4 /* TrackTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		98784F912904BDF4006F4BE4 /* TrackInfo */ = {
+			isa = PBXGroup;
+			children = (
+				98B5DF09290564A800C6FBCB /* ViewModel */,
+				98784F9429055C44006F4BE4 /* TableViewCell */,
+				98784F922904BDFE006F4BE4 /* TrackInfoViewController.swift */,
+				98784F9729055C71006F4BE4 /* TrackInfoInteractor.swift */,
+			);
+			path = TrackInfo;
+			sourceTree = "<group>";
+		};
+		98784F9429055C44006F4BE4 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				98B5DF0C290564CA00C6FBCB /* ViewModel */,
+				98784F9529055C4C006F4BE4 /* TrackInfoTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		98B5DF09290564A800C6FBCB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				98B5DF0A290564B000C6FBCB /* TrackInfoViewModelBuilder.swift */,
+				98B5DF0F290564EF00C6FBCB /* TrackInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		98B5DF0C290564CA00C6FBCB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				98B5DF0D290564D100C6FBCB /* TrackInfoTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		98FE9A8E290045350014CBAD = {
+			isa = PBXGroup;
+			children = (
+				98FE9AE7290205B40014CBAD /* Resources.bundle */,
+				98FE9A99290045350014CBAD /* GPXViewer */,
+				98FE9A98290045350014CBAD /* Products */,
+				ED70BF4EFD7608088D7D7D18 /* Pods */,
+				87B0F90537AF716177C46E04 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98FE9A98290045350014CBAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98FE9A97290045350014CBAD /* GPXViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98FE9A99290045350014CBAD /* GPXViewer */ = {
+			isa = PBXGroup;
+			children = (
+				98784F7E29047556006F4BE4 /* Extensions */,
+				98148D4A29030EA40058EBF1 /* Supporting Files */,
+				98FE9B022902F5260014CBAD /* Data */,
+				98FE9AFB2902F46C0014CBAD /* Common */,
+				98FE9AF82902F42B0014CBAD /* Scenes */,
+				98FE9AF72902F4120014CBAD /* Application */,
+			);
+			path = GPXViewer;
+			sourceTree = "<group>";
+		};
+		98FE9AF72902F4120014CBAD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				98FE9A9A290045350014CBAD /* AppDelegate.swift */,
+				98FE9A9C290045350014CBAD /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		98FE9AF82902F42B0014CBAD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				98FE9AF52902F3420014CBAD /* TracksCoordinator.swift */,
+				98FE9AF92902F4310014CBAD /* Tracks */,
+				98FE9AFA2902F43C0014CBAD /* TrackDetail */,
+				98784F912904BDF4006F4BE4 /* TrackInfo */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		98FE9AF92902F4310014CBAD /* Tracks */ = {
+			isa = PBXGroup;
+			children = (
+				98784F77290472FE006F4BE4 /* TableViewCells */,
+				98784F72290472DC006F4BE4 /* ViewModel */,
+				98FE9A9E290045350014CBAD /* TracksViewController.swift */,
+				98FE9AE12901ED550014CBAD /* TracksInteractor.swift */,
+			);
+			path = Tracks;
+			sourceTree = "<group>";
+		};
+		98FE9AFA2902F43C0014CBAD /* TrackDetail */ = {
+			isa = PBXGroup;
+			children = (
+				98FE9AF12902F3190014CBAD /* TrackDetailViewController.swift */,
+				98FE9AF32902F3260014CBAD /* TrackDetailInteractor.swift */,
+			);
+			path = TrackDetail;
+			sourceTree = "<group>";
+		};
+		98FE9AFB2902F46C0014CBAD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				98FE9AFC2902F4730014CBAD /* AppContext.swift */,
+				98FE9AFE2902F4990014CBAD /* AppInitializer.swift */,
+				98FE9B002902F4A70014CBAD /* AllServices.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		98FE9B022902F5260014CBAD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				98148D4929030E8A0058EBF1 /* Utils */,
+				98148D4829030E840058EBF1 /* Mappers */,
+				98148D4729030E7B0058EBF1 /* Parsers */,
+				98148D4529030E670058EBF1 /* Factories */,
+				98148D4429030E600058EBF1 /* Models */,
+				98FE9B032902F52B0014CBAD /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		98FE9B032902F52B0014CBAD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				98FE9B042902F5330014CBAD /* TracksRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		ED70BF4EFD7608088D7D7D18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89A24724C7760E727011EF3E /* Pods-GPXViewer.debug.xcconfig */,
+				5C30500B2B984655BB36C382 /* Pods-GPXViewer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98FE9A96290045350014CBAD /* GPXViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98FE9AAB290045360014CBAD /* Build configuration list for PBXNativeTarget "GPXViewer" */;
+			buildPhases = (
+				3C395F8C4FBD6110E4436315 /* [CP] Check Pods Manifest.lock */,
+				98FE9A93290045350014CBAD /* Sources */,
+				98FE9A94290045350014CBAD /* Frameworks */,
+				98FE9A95290045350014CBAD /* Resources */,
+				DE01440610B9CEC5C8E936F5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPXViewer;
+			productName = GPXViewer;
+			productReference = 98FE9A97290045350014CBAD /* GPXViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98FE9A8F290045350014CBAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					98FE9A96290045350014CBAD = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 98FE9A92290045350014CBAD /* Build configuration list for PBXProject "GPXViewer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98FE9A8E290045350014CBAD;
+			productRefGroup = 98FE9A98290045350014CBAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98FE9A96290045350014CBAD /* GPXViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98FE9A95290045350014CBAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FE9AE8290205B40014CBAD /* Resources.bundle in Resources */,
+				98FE9AA7290045360014CBAD /* LaunchScreen.storyboard in Resources */,
+				98FE9AA4290045360014CBAD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C395F8C4FBD6110E4436315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPXViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE01440610B9CEC5C8E936F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPXViewer/Pods-GPXViewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPXViewer/Pods-GPXViewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GPXViewer/Pods-GPXViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98FE9A93290045350014CBAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FE9AAF2900454B0014CBAD /* TrackParser.swift in Sources */,
+				98784F9629055C4C006F4BE4 /* TrackInfoTableViewCell.swift in Sources */,
+				98B5DF0B290564B000C6FBCB /* TrackInfoViewModelBuilder.swift in Sources */,
+				98FE9AFD2902F4730014CBAD /* AppContext.swift in Sources */,
+				98FE9AE22901ED550014CBAD /* TracksInteractor.swift in Sources */,
+				98FE9AF22902F3190014CBAD /* TrackDetailViewController.swift in Sources */,
+				98784F74290472EA006F4BE4 /* TracksViewModel.swift in Sources */,
+				98FE9A9F290045350014CBAD /* TracksViewController.swift in Sources */,
+				98FE9AEE2902E9DF0014CBAD /* Track.swift in Sources */,
+				98148D4329030B7B0058EBF1 /* TrackMapper.swift in Sources */,
+				98784F8929047A03006F4BE4 /* TrackTableViewCellViewModel.swift in Sources */,
+				98FE9AF42902F3260014CBAD /* TrackDetailInteractor.swift in Sources */,
+				98784F9829055C71006F4BE4 /* TrackInfoInteractor.swift in Sources */,
+				98B5DF0E290564D100C6FBCB /* TrackInfoTableViewCellViewModel.swift in Sources */,
+				98784F832904757D006F4BE4 /* UITableView+TypeSafe.swift in Sources */,
+				98FE9AF62902F3420014CBAD /* TracksCoordinator.swift in Sources */,
+				98FE9B052902F5330014CBAD /* TracksRepository.swift in Sources */,
+				98784F932904BDFE006F4BE4 /* TrackInfoViewController.swift in Sources */,
+				98784F8F29049023006F4BE4 /* MapSnapshotGenerator.swift in Sources */,
+				98FE9AFF2902F4990014CBAD /* AppInitializer.swift in Sources */,
+				98FE9AEA2902E7DA0014CBAD /* BundleManager.swift in Sources */,
+				98784F8129047567006F4BE4 /* UIStackView+Utils.swift in Sources */,
+				98FE9A9B290045350014CBAD /* AppDelegate.swift in Sources */,
+				98FE9AEC2902E87B0014CBAD /* TracksFactory.swift in Sources */,
+				98FE9A9D290045350014CBAD /* SceneDelegate.swift in Sources */,
+				98784F76290472F0006F4BE4 /* TracksViewModelBuilder.swift in Sources */,
+				98B5DF10290564EF00C6FBCB /* TrackInfoViewModel.swift in Sources */,
+				98FE9B012902F4A70014CBAD /* AllServices.swift in Sources */,
+				98784F792904730C006F4BE4 /* TrackTableViewCell.swift in Sources */,
+				98784F8D29048EC1006F4BE4 /* MapKit+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98FE9AA5290045360014CBAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98FE9AA6290045360014CBAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98FE9AA9290045360014CBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98FE9AAA290045360014CBAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98FE9AAC290045360014CBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A24724C7760E727011EF3E /* Pods-GPXViewer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9LF788ULX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GPXViewer/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burakakyalcin.GPXViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98FE9AAD290045360014CBAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C30500B2B984655BB36C382 /* Pods-GPXViewer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9LF788ULX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GPXViewer/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burakakyalcin.GPXViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98FE9A92290045350014CBAD /* Build configuration list for PBXProject "GPXViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FE9AA9290045360014CBAD /* Debug */,
+				98FE9AAA290045360014CBAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98FE9AAB290045360014CBAD /* Build configuration list for PBXNativeTarget "GPXViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FE9AAC290045360014CBAD /* Debug */,
+				98FE9AAD290045360014CBAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98FE9A8F290045350014CBAD /* Project object */;
+}
